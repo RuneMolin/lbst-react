@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The form initially looks as expected 1`] = `
+<form
+  className="box"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+      htmlFor="navn"
+    >
+      Navn
+    </label>
+    <div
+      className="control has-icons-left"
+    >
+      <input
+        className="input is-danger"
+        defaultValue=""
+        name="navn"
+        onChange={[Function]}
+        required={true}
+        type="text"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fa fa-user"
+        />
+      </span>
+    </div>
+  </div>
+  <div
+    className="field"
+  >
+    <label
+      className="label"
+      htmlFor="tlf"
+    >
+      Telefonnummer
+    </label>
+    <div
+      className="control has-icons-left"
+    >
+      <input
+        className="input is-danger"
+        defaultValue=""
+        name="tlf"
+        onChange={[Function]}
+        required={true}
+        type="tel"
+      />
+      <span
+        className="icon is-small is-left"
+      >
+        <i
+          className="fa fa-phone"
+        />
+      </span>
+    </div>
+  </div>
+  <div
+    className="field"
+  >
+    <div
+      className="control"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          checked={false}
+          name="jegErEnig"
+          onChange={[Function]}
+          required={true}
+          type="checkbox"
+        />
+        Jeg lyver ikke
+      </label>
+    </div>
+  </div>
+  <div
+    className="field"
+  >
+    <button
+      className="button is-primary"
+      disabled={true}
+      type="submit"
+    >
+      OK
+    </button>
+  </div>
+</form>
+`;
