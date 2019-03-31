@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow, configure } from 'enzyme'
+import { shallow, mount, configure } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 configure({ adapter: new Adapter() })
@@ -13,9 +13,19 @@ describe('The form', () => {
   })
 
   it('displays the "navn" field as success when anything is entered', () => {
-    const subject = shallow(<Form />)
+    const wrapper = mount(<Form />)
 
-    console.info(subject.find('input[name="navn"]').prop('class'))
-    //expect(subject.find('input[name="navn"]'))
+    const control = wrapper.find('input[name="navn"]')
+
+    expect(control.hasClass('is-danger')).toEqual(true)
+    expect(control.hasClass('is-success')).toEqual(false)
+
+    control.simulate('change', {
+      target: {value: 'Hans'}
+    })
+
+    expect(wrapper.find('input[name="navn"]').hasClass('is-danger')).toEqual(false)
+    expect(wrapper.find('input[name="navn"]').hasClass('is-success')).toEqual(true)
   })
+
 })
