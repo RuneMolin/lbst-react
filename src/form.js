@@ -78,7 +78,7 @@ export default class Form extends React.Component {
                 checked={jegErEnig}
                 required
               />
-              Jeg lyver ikke
+              &nbsp;Jeg lyver ikke
             </label>
           </div>
         </div>

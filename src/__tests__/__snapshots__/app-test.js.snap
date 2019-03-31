@@ -7,10 +7,15 @@ exports[`Looks as expected 1`] = `
   <div
     className="container"
   >
-    <h2
+    <h1
       className="title"
     >
       Indtast navn og telefonnummer
+    </h1>
+    <h2
+      className="subtitle"
+    >
+      React version
     </h2>
     <form
       className="box"
@@ -91,7 +96,7 @@ exports[`Looks as expected 1`] = `
               required={true}
               type="checkbox"
             />
-            Jeg lyver ikke
+             Jeg lyver ikke
           </label>
         </div>
       </div>

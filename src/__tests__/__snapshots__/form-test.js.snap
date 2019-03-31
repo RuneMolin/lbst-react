@@ -80,7 +80,7 @@ exports[`The form initially looks as expected 1`] = `
           required={true}
           type="checkbox"
         />
-        Jeg lyver ikke
+         Jeg lyver ikke
       </label>
     </div>
   </div>

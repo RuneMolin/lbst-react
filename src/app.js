@@ -6,7 +6,8 @@ export default class App extends React.Component {
     return (
       <div className="section">
         <div className="container">
-          <h2 className="title">Indtast navn og telefonnummer</h2>
+          <h1 className="title">Indtast navn og telefonnummer</h1>
+          <h2 className="subtitle">React version</h2>
           <Form />
         </div>
       </div>
